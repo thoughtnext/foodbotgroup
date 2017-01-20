@@ -1,7 +1,8 @@
 (function() {
   var app = angular.module('app');
   app.factory('AppManager', function($q, $http, $log) {
-    var baseUrl = 'https://53fc0fff.ngrok.io'
+    // var baseUrl = 'https://53fc0fff.ngrok.io'
+    var baseUrl = 'https://foodiebot.herokuapp.com'
     return {
       checkGroupName: function(group_name) {
         var deferred = $q.defer();
